@@ -27,3 +27,4 @@ class BreadthFirstSearch<V> implements Search<V> {
         }
 
         return result;
+    }
