@@ -25,5 +25,16 @@ public class Vertex<V> {
     public void addVertex(Vertex<V> vertex) {
         graph.put(vertex, new ArrayList<>());
     }
+        public void addEdge(Vertex<V> source, Vertex<V> destination, double weight) {
+            if (graph.containsKey(source) && graph.containsKey(destination)) {
+                source.addAdjacentVertex(destination, weight);
+                graph.get(source).add(destination);
+            }
+        }
+
+        public List<Vertex<V>> getAdjacentVertices(Vertex<V> vertex) {
+            return graph.getOrDefault(vertex, new ArrayList<>());
+        }
+    }
 }
 
