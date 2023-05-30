@@ -15,5 +15,15 @@ public class Vertex<V> {
         adjacentVertices.put(destination, weight);
     }
 }
+    class WeightedGraph<V> {
+    private Map<Vertex<V>, List<Vertex<V>>> graph;
+
+    public WeightedGraph() {
+        this.graph = new HashMap<>();
+    }
+
+    public void addVertex(Vertex<V> vertex) {
+        graph.put(vertex, new ArrayList<>());
+    }
 }
 
