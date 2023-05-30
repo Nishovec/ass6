@@ -36,5 +36,8 @@ public class Vertex<V> {
             return graph.getOrDefault(vertex, new ArrayList<>());
         }
     }
+    interface Search<V> {
+    List<Vertex<V>> traverse(Vertex<V> source);
+}
 }
 
