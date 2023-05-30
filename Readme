@@ -1,0 +1,26 @@
+This code provides implementations of breadth-first search (BFS) and Dijkstra's algorithm for a vertex-weighted graph. The graph consists of vertices connected by edges, where each edge has a weight associated with it. The code demonstrates how to traverse the graph using BFS and find the shortest paths using Dijkstra's algorithm.
+
+The code includes the following classes:
+
+Vertex<V>: Represents a vertex in the graph. It holds the vertex data and maintains a map of adjacent vertices and their corresponding weights.
+
+WeightedGraph<V>: Represents the weighted graph. It stores a collection of vertices and their adjacency lists. It provides methods to add vertices, add weighted edges, and retrieve adjacent vertices.
+
+Search<V>: An interface for graph traversal algorithms. It defines a traverse method that takes a source vertex and returns a list of vertices visited during the traversal.
+
+BreadthFirstSearch<V>: Implements the BFS algorithm for graph traversal. It takes a weighted graph and performs a breadth-first search starting from a given source vertex.
+
+DijkstraSearch<V>: Implements Dijkstra's algorithm for finding the shortest paths in a weighted graph. It takes a weighted graph and calculates the shortest paths starting from a given source vertex.
+
+Main: Contains the main method to demonstrate the usage of the implemented classes. It creates a sample graph, adds vertices and edges with weights, and performs BFS and Dijkstra's algorithm on the graph.
+Example
+WeightedGraph<String> graph = new WeightedGraph<>();
+
+Vertex<String> vertexA = new Vertex<>("A");
+Vertex<String> vertexB = new Vertex<>("B");
+Vertex<String> vertexC = new Vertex<>("C");
+Vertex<String> vertexD = new Vertex<>("D");
+Vertex<String> vertexE = new Vertex<>("E");
+
+graph.addVertex(vertexA);
+graph.addVertex(vertex
